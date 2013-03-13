@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-private
+protected
 
   def current_user
     OpenStruct.new(admin?: false)
